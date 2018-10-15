@@ -1,0 +1,17 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A simple chat application using sockect.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Odigie Anthony",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node": "^10.12.0",
+    "nodemon": "^1.18.4",
+    "socket.io": "^2.1.1"
+  }
+}
