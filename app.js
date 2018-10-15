@@ -24,3 +24,5 @@ socket_io.on('connection', (socket) => {
 const port = process.env.PORT || 3500;//setting the environment port that assigns a port number
 http.listen(port, () => {
     console.log(`Listening on port ${ port }`);
+});
+
