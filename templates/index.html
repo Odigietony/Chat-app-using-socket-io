@@ -9,25 +9,13 @@
 </head>
 <body>
     <ul id="messages"></ul>
+    <div id="feedback"></div>
     <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
+        <input id="username" type="text" autocomplete="off"><hr>
+        <input id="message" type="text" autocomplete="off" /><button>Send</button>
     </form>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-    <script>
-       $(()=>{
-    let socket = io();
-    $('form').submit(() => {
-        socket.emit('chat message', $('#m').val());
-        $('#m').val('');
-        return false;
-    });
-    socket.on('chat message', (msg) => {
-        $('#messages').append($('<li>').text(msg));
-    });
-});
-
-    
-    </script> 
+    <script src="/scripts/realtimeChat.js"></script>
 </body>
 </html>
